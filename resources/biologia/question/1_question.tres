@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dkodtetkyjaug"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_c2oai"]
+
+[resource]
+script = ExtResource("1_c2oai")
+question_info = "Qual é a unidade básica da vida?"
+type = 0
+options = Array[String](["Célula", "Molécula", "Átomo", "Neurõnio"])
+correct = "Célula"

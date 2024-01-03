@@ -1,0 +1,335 @@
+[gd_scene load_steps=12 format=3 uid="uid://bw5cckigw104a"]
+
+[ext_resource type="Script" path="res://scripts/level/level_geo.gd" id="1_5dhoc"]
+[ext_resource type="Texture2D" uid="uid://bwomwu6j625ij" path="res://assets/gameBackground.jpg" id="1_r0172"]
+[ext_resource type="FontVariation" uid="uid://uchs7wm3my1k" path="res://boldfont.tres" id="2_bhjip"]
+[ext_resource type="Resource" uid="uid://cl4c4y3fjv22b" path="res://resources/bd/bd_quiz_geo.tres" id="2_lkqne"]
+[ext_resource type="Texture2D" uid="uid://cdpry3odt7p7m" path="res://assets/gameoverbackground.jpg" id="5_8rsru"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qbsw4"]
+bg_color = Color(0.964706, 0.878431, 0.988235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8kove"]
+bg_color = Color(0.964706, 0.878431, 0.988235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_15ixo"]
+bg_color = Color(0.964706, 0.878431, 0.988235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cggpd"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6j8ki"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wua6t"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[node name="Level_geo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5dhoc")
+bd_quiz = ExtResource("2_lkqne")
+color_right = Color(0, 0.654902, 0.321569, 1)
+color_wrong = Color(0.792157, 0, 0.196078, 1)
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.576471, 0.117647, 0.682353, 1)
+
+[node name="GameBackground" type="Sprite2D" parent="Background"]
+position = Vector2(361, 641)
+texture = ExtResource("1_r0172")
+
+[node name="Question_info" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -339.0
+offset_top = 22.0
+offset_right = 339.0
+offset_bottom = 595.0
+grow_horizontal = 2
+
+[node name="Txt_question" type="Label" parent="Question_info"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_bhjip")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Panel" type="Panel" parent="Question_info"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Question_image" type="TextureRect" parent="Question_info/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Question_holder" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -332.0
+offset_top = -653.0
+offset_right = 334.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="Button_option_1" type="Button" parent="Question_holder"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_pressed_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_hover_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_qbsw4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8kove")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_15ixo")
+
+[node name="Button_option_2" type="Button" parent="Question_holder"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_pressed_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_hover_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_qbsw4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8kove")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_15ixo")
+
+[node name="Button_option_3" type="Button" parent="Question_holder"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_pressed_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_hover_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_qbsw4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8kove")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_15ixo")
+
+[node name="Button_option_4" type="Button" parent="Question_holder"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_pressed_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_hover_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_qbsw4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8kove")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_15ixo")
+
+[node name="Back_menu_button" type="Button" parent="."]
+layout_mode = 1
+offset_left = 69.0
+offset_top = 1.0
+offset_right = 119.0
+offset_bottom = 69.0
+rotation = 1.57021
+theme_override_fonts/font = ExtResource("2_bhjip")
+theme_override_font_sizes/font_size = 60
+text = "..."
+flat = true
+
+[node name="Game_over" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 1.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Gameoverbackground" type="Sprite2D" parent="Game_over/Background"]
+position = Vector2(359, 639)
+texture = ExtResource("5_8rsru")
+
+[node name="Txt_points" type="Label" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -346.0
+offset_right = 164.0
+offset_bottom = -232.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_bhjip")
+theme_override_font_sizes/font_size = 100
+text = "342"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Txt_info" type="Label" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -204.0
+offset_right = 178.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_bhjip")
+theme_override_font_sizes/font_size = 60
+text = "Parabéns!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Alinhamento" type="HBoxContainer" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = 125.0
+offset_right = 203.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Acertou" type="Label" parent="Game_over/Alinhamento"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bhjip")
+theme_override_font_sizes/font_size = 60
+text = "Acertou:  "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Txt_result" type="Label" parent="Game_over/Alinhamento"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bhjip")
+theme_override_font_sizes/font_size = 60
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button_menu" type="Button" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -147.0
+offset_top = -214.0
+offset_right = 153.0
+offset_bottom = -117.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_bhjip")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_cggpd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6j8ki")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wua6t")
+text = "Menu"
+
+[node name="Txt_timer" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -44.0
+offset_top = 24.0
+offset_right = 48.0
+offset_bottom = 86.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_bhjip")
+theme_override_font_sizes/font_size = 50
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="Back_menu_button" to="." method="_on_back_menu_button_pressed"]
+[connection signal="pressed" from="Game_over/Button_menu" to="." method="_on_button_menu_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

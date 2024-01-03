@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BDQuiz" load_steps=12 format=3 uid="uid://cl4c4y3fjv22b"]
+
+[ext_resource type="Script" path="res://scripts/resources/bd_quiz.gd" id="1_jtfww"]
+[ext_resource type="Resource" uid="uid://b4m7jmgttxt6x" path="res://resources/geografia/question/1_question.tres" id="1_r6g8b"]
+[ext_resource type="Resource" uid="uid://dudmv4pwfp42c" path="res://resources/geografia/question/2_question.tres" id="2_n5oqr"]
+[ext_resource type="Resource" uid="uid://bvqdbh48qggod" path="res://resources/geografia/question/3_question.tres" id="3_knehy"]
+[ext_resource type="Resource" uid="uid://cei8n4hmvrwwa" path="res://resources/geografia/question/4_question.tres" id="4_hp6at"]
+[ext_resource type="Resource" uid="uid://bxhc0trrcrfuv" path="res://resources/geografia/question/5_question.tres" id="5_g0egf"]
+[ext_resource type="Resource" uid="uid://ysdm8sbovhm7" path="res://resources/geografia/question/6_question.tres" id="6_vespm"]
+[ext_resource type="Resource" uid="uid://dfsnxb73v56tj" path="res://resources/geografia/question/7_question.tres" id="7_eablh"]
+[ext_resource type="Resource" uid="uid://ry6ct4etdusj" path="res://resources/geografia/question/8_question.tres" id="8_wf7tx"]
+[ext_resource type="Resource" uid="uid://c8oylcyqanenp" path="res://resources/geografia/question/9_question.tres" id="9_2mkex"]
+[ext_resource type="Resource" uid="uid://bdwrynvssd2l7" path="res://resources/geografia/question/10_question.tres" id="10_4rw3g"]
+
+[resource]
+script = ExtResource("1_jtfww")
+bd = Array[Resource]([ExtResource("1_r6g8b"), ExtResource("2_n5oqr"), ExtResource("3_knehy"), ExtResource("4_hp6at"), ExtResource("5_g0egf"), ExtResource("6_vespm"), ExtResource("7_eablh"), ExtResource("8_wf7tx"), ExtResource("9_2mkex"), ExtResource("10_4rw3g")])

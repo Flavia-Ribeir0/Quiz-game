@@ -1,0 +1,271 @@
+[gd_scene load_steps=23 format=3 uid="uid://dqejaa8sp5jeg"]
+
+[ext_resource type="Texture2D" uid="uid://bwomwu6j625ij" path="res://assets/gameBackground.jpg" id="1_5pmmx"]
+[ext_resource type="Script" path="res://scripts/level/ing.gd" id="1_biin1"]
+[ext_resource type="FontVariation" uid="uid://uchs7wm3my1k" path="res://boldfont.tres" id="2_x64dt"]
+[ext_resource type="Script" path="res://scripts/level/ptg.gd" id="4_fniav"]
+[ext_resource type="Script" path="res://scripts/level/hst.gd" id="5_iwf6t"]
+[ext_resource type="Script" path="res://scripts/level/geo.gd" id="6_k7oe1"]
+[ext_resource type="Script" path="res://scripts/level/button_menu.gd" id="6_qq827"]
+[ext_resource type="Script" path="res://scripts/level/bio.gd" id="7_5s4ty"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alj64"]
+bg_color = Color(0.819608, 0.32549, 0.933333, 1)
+border_width_bottom = 10
+border_color = Color(0.698039, 0.14902, 0.815686, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_soyn1"]
+bg_color = Color(0.796705, 0.258441, 0.914865, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aoi7j"]
+bg_color = Color(0.796705, 0.258441, 0.914865, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mt7ll"]
+bg_color = Color(0.819608, 0.32549, 0.933333, 1)
+border_width_bottom = 10
+border_color = Color(0.698039, 0.14902, 0.815686, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s01se"]
+bg_color = Color(0.796705, 0.258441, 0.914865, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2waeg"]
+bg_color = Color(0.796705, 0.258441, 0.914865, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drn58"]
+bg_color = Color(0.818993, 0.326436, 0.934016, 1)
+border_width_bottom = 10
+border_color = Color(0.696729, 0.149487, 0.815374, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hlkva"]
+bg_color = Color(0.796705, 0.258441, 0.914865, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhjxa"]
+bg_color = Color(0.796705, 0.258441, 0.914865, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_snm53"]
+bg_color = Color(0.818993, 0.326436, 0.934016, 1)
+border_width_bottom = 10
+border_color = Color(0.696729, 0.149487, 0.815374, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e6hh"]
+bg_color = Color(0.818993, 0.326436, 0.934016, 1)
+border_width_bottom = 10
+border_color = Color(0.696729, 0.149487, 0.815374, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qcfka"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q2ri8"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2j2na"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[node name="Category_choise" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.576471, 0.117647, 0.682353, 1)
+
+[node name="GameBackground" type="Sprite2D" parent="Background"]
+position = Vector2(365, 641)
+texture = ExtResource("1_5pmmx")
+
+[node name="Category_name" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -306.0
+offset_top = 165.0
+offset_right = 424.0
+offset_bottom = 259.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_x64dt")
+theme_override_font_sizes/font_size = 60
+text = "Escolha a categoria"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -294.0
+offset_right = 280.0
+offset_bottom = 385.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="ing" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_x64dt")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_alj64")
+theme_override_styles/hover = SubResource("StyleBoxFlat_soyn1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_aoi7j")
+text = "Inglês"
+script = ExtResource("1_biin1")
+
+[node name="ptg" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_x64dt")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_mt7ll")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s01se")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2waeg")
+text = "Português"
+script = ExtResource("4_fniav")
+
+[node name="hst" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_x64dt")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_drn58")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hlkva")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uhjxa")
+text = "História"
+script = ExtResource("5_iwf6t")
+
+[node name="geo" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_x64dt")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_snm53")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hlkva")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uhjxa")
+text = "Geografia"
+script = ExtResource("6_k7oe1")
+
+[node name="bio" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_x64dt")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_6e6hh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hlkva")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uhjxa")
+text = "Biologia"
+script = ExtResource("7_5s4ty")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -298.0
+offset_top = -1279.0
+offset_right = -256.0
+offset_bottom = -1219.0
+grow_horizontal = 2
+grow_vertical = 0
+rotation = 1.57457
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_x64dt")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_qcfka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q2ri8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2j2na")
+text = "..."
+flat = true
+script = ExtResource("6_qq827")
+
+[connection signal="pressed" from="VBoxContainer/ing" to="VBoxContainer/ing" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/ptg" to="VBoxContainer/ptg" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/hst" to="VBoxContainer/hst" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/geo" to="VBoxContainer/geo" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/bio" to="VBoxContainer/bio" method="_on_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

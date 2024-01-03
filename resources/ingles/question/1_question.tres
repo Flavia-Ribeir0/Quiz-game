@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://wbuhxeqs18yj"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_2kgmj"]
+
+[resource]
+script = ExtResource("1_2kgmj")
+question_info = "Qual das alternativas responde corretamente a pergunta \"How are you?\""
+type = 0
+options = Array[String](["I am Brazilian", "I am a teacher", "I am 10", "I am fine, thanks"])
+correct = "I am fine, thanks"

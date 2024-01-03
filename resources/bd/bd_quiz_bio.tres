@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BDQuiz" load_steps=12 format=3 uid="uid://elslqmnvpx6q"]
+
+[ext_resource type="Resource" uid="uid://dkodtetkyjaug" path="res://resources/biologia/question/1_question.tres" id="1_mql1y"]
+[ext_resource type="Script" path="res://scripts/resources/bd_quiz.gd" id="1_mxn0d"]
+[ext_resource type="Resource" uid="uid://0ip1vn8s8tp5" path="res://resources/biologia/question/2_question.tres" id="2_x7wks"]
+[ext_resource type="Resource" uid="uid://devpkprdsfnif" path="res://resources/biologia/question/3_question.tres" id="3_qh6i0"]
+[ext_resource type="Resource" uid="uid://kbkqjitkp5tq" path="res://resources/biologia/question/4_question.tres" id="4_u1lnp"]
+[ext_resource type="Resource" uid="uid://0r3wjx5rt32p" path="res://resources/biologia/question/5_question.tres" id="5_d7w17"]
+[ext_resource type="Resource" uid="uid://dlvu1jl3qk7sf" path="res://resources/biologia/question/6_question.tres" id="6_aeovg"]
+[ext_resource type="Resource" uid="uid://wtx4g7rxsq50" path="res://resources/biologia/question/7_question.tres" id="7_hdlq3"]
+[ext_resource type="Resource" uid="uid://cpnoknlueu3ta" path="res://resources/biologia/question/8_question.tres" id="8_hy7jw"]
+[ext_resource type="Resource" uid="uid://cgsun273yn3ww" path="res://resources/biologia/question/9_question.tres" id="9_dukhh"]
+[ext_resource type="Resource" uid="uid://dskexae2rp2tp" path="res://resources/biologia/question/10_question.tres" id="10_ysuga"]
+
+[resource]
+script = ExtResource("1_mxn0d")
+bd = Array[Resource]([ExtResource("1_mql1y"), ExtResource("2_x7wks"), ExtResource("3_qh6i0"), ExtResource("4_u1lnp"), ExtResource("5_d7w17"), ExtResource("6_aeovg"), ExtResource("7_hdlq3"), ExtResource("8_hy7jw"), ExtResource("9_dukhh"), ExtResource("10_ysuga")])

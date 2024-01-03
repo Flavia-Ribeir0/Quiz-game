@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bx3e15wuk6q6p"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_imi2a"]
+
+[resource]
+script = ExtResource("1_imi2a")
+question_info = "Qual é o antônimo da palavra “Simpatico”?"
+type = 0
+options = Array[String](["Amigável", "Antiamigável", "Antipático", "Apático"])
+correct = "Antipático"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://calrn7v2tq03f"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_joj67"]
+
+[resource]
+script = ExtResource("1_joj67")
+question_info = "Qual das frases está correta?"
+type = 0
+options = Array[String](["He always is late", "Always he is late", "He is always late", "Is he always late"])
+correct = "He is always late"

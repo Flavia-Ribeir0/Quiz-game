@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://d35shsonu6h17"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_fujor"]
+
+[resource]
+script = ExtResource("1_fujor")
+question_info = "Quais cidades do japão foram atingidas por bombas na Segunda Guerra Mundial?"
+type = 0
+options = Array[String](["Hiroshima e Nagasaki", "Hiroshima e Osaka", "Nagasaki e Tokyo", "Hiroshima e Tokyo"])
+correct = "Hiroshima e Nagasaki"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dudmv4pwfp42c"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_f83ey"]
+
+[resource]
+script = ExtResource("1_f83ey")
+question_info = "Qual é a capital de Portugal?"
+type = 0
+options = Array[String](["Lisboa", "Porto", "Braga", "Coimbra"])
+correct = "Lisboa"

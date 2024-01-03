@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cgsun273yn3ww"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_b4kp6"]
+
+[resource]
+script = ExtResource("1_b4kp6")
+question_info = "Qual é o nome do osso que forma a parte inferior da perna?"
+type = 0
+options = Array[String](["Fêmur", "Patela", "Fíbula", "Tíbia"])
+correct = "Tíbia"

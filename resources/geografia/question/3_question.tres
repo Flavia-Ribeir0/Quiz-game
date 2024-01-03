@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bvqdbh48qggod"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_tfm4n"]
+
+[resource]
+script = ExtResource("1_tfm4n")
+question_info = "Qual é o maior oceano do mundo?"
+type = 0
+options = Array[String](["Oceano Glacial Ártico", "Oceano Atlântico", " Oceano Índico", "Oceano Pacifico"])
+correct = "Oceano Pacifico"

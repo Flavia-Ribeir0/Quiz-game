@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://wtx4g7rxsq50"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_ywllu"]
+
+[resource]
+script = ExtResource("1_ywllu")
+question_info = "Quantos corações tem um polvo?"
+type = 0
+options = Array[String](["3", "1", "2", "4"])
+correct = "3"

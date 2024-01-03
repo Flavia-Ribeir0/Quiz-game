@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BDQuiz" load_steps=12 format=3 uid="uid://kcy470d7c7tk"]
+
+[ext_resource type="Script" path="res://scripts/resources/bd_quiz.gd" id="1_pacu0"]
+[ext_resource type="Resource" uid="uid://wbuhxeqs18yj" path="res://resources/ingles/question/1_question.tres" id="1_sgidj"]
+[ext_resource type="Resource" uid="uid://dm40hylptd053" path="res://resources/ingles/question/2_question.tres" id="2_4dc1n"]
+[ext_resource type="Resource" uid="uid://b8t8yvu3gv8lo" path="res://resources/ingles/question/3_question.tres" id="2_6tv5q"]
+[ext_resource type="Resource" uid="uid://bn0qkxhaylgj" path="res://resources/ingles/question/4_question.tres" id="4_17d0p"]
+[ext_resource type="Resource" uid="uid://drjayn1pe5nwj" path="res://resources/ingles/question/5_question.tres" id="5_ued2j"]
+[ext_resource type="Resource" uid="uid://cdu428whxikci" path="res://resources/ingles/question/6_question.tres" id="6_sn8ca"]
+[ext_resource type="Resource" uid="uid://dsc2eptapol25" path="res://resources/ingles/question/7_question.tres" id="7_ohfv1"]
+[ext_resource type="Resource" uid="uid://bvnhvucd7bae" path="res://resources/ingles/question/8_question.tres" id="8_rkg5k"]
+[ext_resource type="Resource" uid="uid://calrn7v2tq03f" path="res://resources/ingles/question/9_question.tres" id="9_b3luy"]
+[ext_resource type="Resource" uid="uid://cp27525juw4nc" path="res://resources/ingles/question/10_question.tres" id="10_ts2f0"]
+
+[resource]
+script = ExtResource("1_pacu0")
+bd = Array[Resource]([ExtResource("1_sgidj"), ExtResource("2_4dc1n"), ExtResource("2_6tv5q"), ExtResource("4_17d0p"), ExtResource("5_ued2j"), ExtResource("6_sn8ca"), ExtResource("7_ohfv1"), ExtResource("8_rkg5k"), ExtResource("9_b3luy"), ExtResource("10_ts2f0")])

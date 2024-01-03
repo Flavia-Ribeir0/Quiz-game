@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://ry6ct4etdusj"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_doemx"]
+
+[resource]
+script = ExtResource("1_doemx")
+question_info = "Qual é a língua oficial da Coreia do Sul?"
+type = 0
+options = Array[String](["Coreano", "Japones", "Chines", "Tailandes"])
+correct = "Coreano"

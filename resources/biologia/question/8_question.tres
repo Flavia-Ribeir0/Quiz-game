@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cpnoknlueu3ta"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_eta2g"]
+
+[resource]
+script = ExtResource("1_eta2g")
+question_info = "Qual destes órgãos produz insulina?"
+type = 0
+options = Array[String](["Fígado", "Pâncreas", "Rim", "Apêndice"])
+correct = "Pâncreas"

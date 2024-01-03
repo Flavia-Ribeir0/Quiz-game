@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://0r3wjx5rt32p"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_c1hdx"]
+
+[resource]
+script = ExtResource("1_c1hdx")
+question_info = "Como se chamam os animais que põem ovos?"
+type = 0
+options = Array[String](["Detritívoro", "Ovíparo", "Mamifero", "Onívoro"])
+correct = "Ovíparo"

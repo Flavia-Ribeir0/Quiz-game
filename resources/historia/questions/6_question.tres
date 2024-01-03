@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dejpwkanwm6it"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_nstsv"]
+
+[resource]
+script = ExtResource("1_nstsv")
+question_info = "Qual país foi atingido por bombas nucleares na Segunda Guerra Mundial?"
+type = 0
+options = Array[String](["Japão", "Taiwan", "Ucrânia", "Tailandia"])
+correct = "Japão"

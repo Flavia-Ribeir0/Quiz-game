@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bvnhvucd7bae"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_1bubx"]
+
+[resource]
+script = ExtResource("1_1bubx")
+question_info = "Qual palavra abaixo é precedida pelo artigo indefinido \"a\"n?"
+type = 0
+options = Array[String](["Apple", "Grape", "Cherry", "Pineapple"])
+correct = "Apple"

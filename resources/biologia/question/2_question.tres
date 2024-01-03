@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://0ip1vn8s8tp5"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_uk6na"]
+
+[resource]
+script = ExtResource("1_uk6na")
+question_info = " Quantos biomas continentais tem o Brasil?"
+type = 0
+options = Array[String](["Cinco", "Seis", "Quatro", "Três"])
+correct = "Seis"

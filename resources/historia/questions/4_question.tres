@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dyrs2dc3jx4sx"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_m27ee"]
+
+[resource]
+script = ExtResource("1_m27ee")
+question_info = "Quantos anos durou a guerra dos 100 anos?"
+type = 0
+options = Array[String](["100", "106", "108", "116"])
+correct = "116"

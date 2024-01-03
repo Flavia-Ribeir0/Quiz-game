@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bo8m3q6ghp0f1"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_j65il"]
+
+[resource]
+script = ExtResource("1_j65il")
+question_info = "Qual é o plural de “Lápis”?"
+type = 0
+options = Array[String](["Lápis", "Lápises", "Lapisos", "Lapiseira"])
+correct = "Lápis"

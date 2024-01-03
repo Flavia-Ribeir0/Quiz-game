@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://b4m7jmgttxt6x"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_gffeb"]
+
+[resource]
+script = ExtResource("1_gffeb")
+question_info = "Qual o país mais populoso do mundo?"
+type = 0
+options = Array[String](["China", "Eua", "India", "Brasil"])
+correct = "India"

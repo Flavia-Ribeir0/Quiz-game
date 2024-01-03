@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dlvu1jl3qk7sf"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_p8uiy"]
+
+[resource]
+script = ExtResource("1_p8uiy")
+question_info = "O processo de fotossíntese das plantas acontece principalmente onde?"
+type = 0
+options = Array[String](["No caule", "Na raiz", "No fruto", "Nas folhas"])
+correct = "Nas folhas"

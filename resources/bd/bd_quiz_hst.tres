@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BDQuiz" load_steps=12 format=3 uid="uid://blyunharw1rl7"]
+
+[ext_resource type="Script" path="res://scripts/resources/bd_quiz.gd" id="1_df6w3"]
+[ext_resource type="Resource" uid="uid://dxm2hku0qjtq8" path="res://resources/historia/questions/1_question.tres" id="1_vpig1"]
+[ext_resource type="Resource" uid="uid://dxcyt67rkoryu" path="res://resources/historia/questions/2_question.tres" id="2_1mi65"]
+[ext_resource type="Resource" uid="uid://dss6bs6p5motq" path="res://resources/historia/questions/3_question.tres" id="3_70fnx"]
+[ext_resource type="Resource" uid="uid://dyrs2dc3jx4sx" path="res://resources/historia/questions/4_question.tres" id="4_2ejpa"]
+[ext_resource type="Resource" uid="uid://dq26xf8mmau3v" path="res://resources/historia/questions/5_question.tres" id="5_i3rcb"]
+[ext_resource type="Resource" uid="uid://dejpwkanwm6it" path="res://resources/historia/questions/6_question.tres" id="6_lgjcv"]
+[ext_resource type="Resource" uid="uid://d35shsonu6h17" path="res://resources/historia/questions/7_question.tres" id="7_waha3"]
+[ext_resource type="Resource" uid="uid://d2o6twf2oxei2" path="res://resources/historia/questions/8_question.tres" id="8_jdbnh"]
+[ext_resource type="Resource" uid="uid://djx3i4ro32u32" path="res://resources/historia/questions/9_question.tres" id="9_uikqc"]
+[ext_resource type="Resource" uid="uid://d3efx0caswuc3" path="res://resources/historia/questions/10_question.tres" id="10_mpv14"]
+
+[resource]
+script = ExtResource("1_df6w3")
+bd = Array[Resource]([ExtResource("1_vpig1"), ExtResource("2_1mi65"), ExtResource("3_70fnx"), ExtResource("4_2ejpa"), ExtResource("5_i3rcb"), ExtResource("6_lgjcv"), ExtResource("7_waha3"), ExtResource("8_jdbnh"), ExtResource("9_uikqc"), ExtResource("10_mpv14")])

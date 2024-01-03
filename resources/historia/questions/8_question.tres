@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://d2o6twf2oxei2"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_krgsc"]
+
+[resource]
+script = ExtResource("1_krgsc")
+question_info = "Em que período ocorreu a Guerra Fria?"
+type = 0
+options = Array[String](["1945-1978", "1940-1945", "1945-1989", "1945-1986"])
+correct = "1945-1989"

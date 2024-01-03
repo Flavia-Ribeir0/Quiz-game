@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://b8t8yvu3gv8lo"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_sw4ib"]
+
+[resource]
+script = ExtResource("1_sw4ib")
+question_info = "O significado da frase “There are two books on the table” é:"
+type = 0
+options = Array[String](["Há dois livros sob a mesa", "Há dois livros lá longe sobre a mesa", "Há dois livros sobre a mesa", "Há dois livros aqui sob a mesa"])
+correct = "Há dois livros sobre a mesa"

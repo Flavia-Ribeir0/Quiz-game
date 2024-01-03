@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dxm2hku0qjtq8"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_4jo16"]
+
+[resource]
+script = ExtResource("1_4jo16")
+question_info = "Qual a data da independência do Brasil?"
+type = 0
+options = Array[String](["7 de setembro de 1822", "7 de setembro de 1832", "7 de setembro de 1842", "7 de setembro de 1852"])
+correct = "7 de setembro de 1822"

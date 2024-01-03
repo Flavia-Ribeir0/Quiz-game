@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://kbkqjitkp5tq"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_w0x6a"]
+
+[resource]
+script = ExtResource("1_w0x6a")
+question_info = "Quantos dentes uma pessoa adulta tem?"
+type = 0
+options = Array[String](["30", "26", "32", "28"])
+correct = "32"

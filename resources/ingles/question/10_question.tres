@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cp27525juw4nc"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_6sqvi"]
+
+[resource]
+script = ExtResource("1_6sqvi")
+question_info = "Qual palavra abaixo é precedida pelo artigo indefinido \"a\"?"
+type = 0
+options = Array[String](["Armchar", "Car", "Egg", "Umbrella"])
+correct = "Car"

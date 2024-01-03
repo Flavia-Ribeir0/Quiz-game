@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://drjayn1pe5nwj"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_q65m5"]
+
+[resource]
+script = ExtResource("1_q65m5")
+question_info = "A palavra “actually” significa:"
+type = 0
+options = Array[String](["Na verdade", "Atualmente", "Atual", "Verdadeiramente"])
+correct = "Na verdade"

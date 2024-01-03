@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cdu428whxikci"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_bocts"]
+
+[resource]
+script = ExtResource("1_bocts")
+question_info = " “Pull” significa:"
+type = 0
+options = Array[String](["Empurrar", "Arrastar", "Pular", "Puxar"])
+correct = "Puxar"

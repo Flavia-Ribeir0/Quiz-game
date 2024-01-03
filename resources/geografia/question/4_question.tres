@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cei8n4hmvrwwa"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_48kq8"]
+
+[resource]
+script = ExtResource("1_48kq8")
+question_info = "Qual é a capital do Amazonas?"
+type = 0
+options = Array[String](["Fortaleza", "Bélem", "Manaus", "Palmas"])
+correct = "Manaus"

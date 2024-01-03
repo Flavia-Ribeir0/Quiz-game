@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://doay1uvewn16a"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_sgdbp"]
+
+[resource]
+script = ExtResource("1_sgdbp")
+question_info = "Como se chama a pontuação que indica uma pausa breve na leitura?"
+type = 0
+options = Array[String](["Virgula", "Ponto final", "reticências", "Ponto e virgula"])
+correct = "Virgula"

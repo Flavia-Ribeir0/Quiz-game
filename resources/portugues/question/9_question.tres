@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://doqd0kbysaxr4"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_eng5k"]
+
+[resource]
+script = ExtResource("1_eng5k")
+question_info = "Qual é o sujeito da frase “Os livros estão na prateleira”?"
+type = 0
+options = Array[String](["Estão", "Na prateleira", "Prateleira", "Os livros"])
+correct = "Os livros"

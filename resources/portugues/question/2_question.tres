@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://c2y4rucsixkdr"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_25hqp"]
+
+[resource]
+script = ExtResource("1_25hqp")
+question_info = "Qual alternativa contém sujeito indeterminado?"
+type = 0
+options = Array[String](["Estou triste com você.", "Vende-se cachorros.", "Os cachorros latiam.", "Marina e mamãe passeavam no parque."])
+correct = "Vende-se cachorros."

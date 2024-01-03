@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dxcyt67rkoryu"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_wa6eb"]
+
+[resource]
+script = ExtResource("1_wa6eb")
+question_info = "Quem foi o idealizador da Reforma Protestante?"
+type = 0
+options = Array[String](["Henrique VIII", "Papa Nicolau II", "João Calvino", " Martinho Lutero"])
+correct = " Martinho Lutero"

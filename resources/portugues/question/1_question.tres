@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://chan48kuop8xf"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_ve5m5"]
+
+[resource]
+script = ExtResource("1_ve5m5")
+question_info = "O verbo \"vestir\" no presente na terceira pessoa no singular é:"
+type = 0
+options = Array[String](["Visto", "Vestirei", "Vestirá", "Veste"])
+correct = "Veste"

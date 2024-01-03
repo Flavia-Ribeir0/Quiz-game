@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dq26xf8mmau3v"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_sobsf"]
+
+[resource]
+script = ExtResource("1_sobsf")
+question_info = "Em que país Einstein vivia antes de se mudar para os EUA?"
+type = 0
+options = Array[String](["Polonia", "Holanda", "Alemanha", "Austria"])
+correct = "Alemanha"

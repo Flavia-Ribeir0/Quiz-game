@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://d3efx0caswuc3"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_12a7m"]
+
+[resource]
+script = ExtResource("1_12a7m")
+question_info = "Quantas estrelas tem na bandeira do Brasil?"
+type = 0
+options = Array[String](["27", "26", "28", "25"])
+correct = "27"

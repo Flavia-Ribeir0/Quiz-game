@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://devpkprdsfnif"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_4ebnb"]
+
+[resource]
+script = ExtResource("1_4ebnb")
+question_info = "Quantos ossos tem no corpo humano?"
+type = 0
+options = Array[String](["208", "216", "210", "206"])
+correct = "206"

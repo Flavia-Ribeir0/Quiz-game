@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://btopp453yu0fy"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_63uyc"]
+
+[resource]
+script = ExtResource("1_63uyc")
+question_info = "Qual é o antônimo da palavra “Amor”?"
+type = 0
+options = Array[String](["Raiva", "Tristeza", "Ódio", "Aflição"])
+correct = "Ódio"

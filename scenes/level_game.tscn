@@ -1,0 +1,377 @@
+[gd_scene load_steps=15 format=3 uid="uid://ca1brfrrg3yso"]
+
+[ext_resource type="Script" path="res://scripts/level/level_game.gd" id="1_2y5fe"]
+[ext_resource type="Resource" uid="uid://kcy470d7c7tk" path="res://resources/bd/bd_quiz_ingles.tres" id="2_1feob"]
+[ext_resource type="Texture2D" uid="uid://bwomwu6j625ij" path="res://assets/gameBackground.jpg" id="3_wq7fc"]
+[ext_resource type="FontVariation" uid="uid://uchs7wm3my1k" path="res://boldfont.tres" id="4_7ojto"]
+[ext_resource type="Texture2D" uid="uid://cdpry3odt7p7m" path="res://assets/gameoverbackground.jpg" id="5_8pwf5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nls2v"]
+bg_color = Color(0.964706, 0.878431, 0.988235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5gym"]
+bg_color = Color(0.966284, 0.878061, 0.988189, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.796705, 0.258441, 0.914865, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_axcq6"]
+bg_color = Color(0.966284, 0.878061, 0.988189, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.796705, 0.258441, 0.914865, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8effq"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wir8w"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bybuf"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hk1u0"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_04e7g"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2tvg5"]
+bg_color = Color(0.796078, 0.258824, 0.913725, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[node name="Level_game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2y5fe")
+bd_quiz = ExtResource("2_1feob")
+color_right = Color(0, 0.662745, 0.321569, 1)
+color_wrong = Color(0.792157, 0, 0.196078, 1)
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.576471, 0.117647, 0.682353, 1)
+
+[node name="GameBackground" type="Sprite2D" parent="Background"]
+position = Vector2(361, 640)
+texture = ExtResource("3_wq7fc")
+
+[node name="Question_info" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -340.0
+offset_top = 23.0
+offset_right = 341.0
+offset_bottom = 595.0
+grow_horizontal = 2
+
+[node name="Txt_question" type="Label" parent="Question_info"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Panel" type="Panel" parent="Question_info"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+
+[node name="Question_image" type="TextureRect" parent="Question_info/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Question_holder" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -333.0
+offset_top = -652.0
+offset_right = 334.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="Button_option_1" type="Button" parent="Question_holder"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_colors/font_pressed_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_colors/font_hover_color = Color(0.513726, 0.0666667, 0.603922, 1)
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_nls2v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u5gym")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_axcq6")
+
+[node name="Button_option_2" type="Button" parent="Question_holder"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_colors/font_pressed_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_colors/font_hover_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_nls2v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u5gym")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_axcq6")
+
+[node name="Button_option_3" type="Button" parent="Question_holder"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_colors/font_pressed_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_colors/font_hover_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_nls2v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u5gym")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_axcq6")
+
+[node name="Button_option_4" type="Button" parent="Question_holder"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_colors/font_pressed_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_colors/font_hover_color = Color(0.514096, 0.0650245, 0.603117, 1)
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_nls2v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u5gym")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_axcq6")
+
+[node name="Back_menu_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 71.0
+offset_right = 113.0
+offset_bottom = 66.0
+rotation = 1.57196
+scale = Vector2(1.11766, 1.05597)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_8effq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wir8w")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bybuf")
+text = "..."
+flat = true
+
+[node name="Game_over" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="Game_over"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Gameoverbackground" type="Sprite2D" parent="Game_over/Background"]
+position = Vector2(361, 640)
+texture = ExtResource("5_8pwf5")
+
+[node name="Txt_points" type="Label" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -231.0
+offset_top = 217.0
+offset_right = 241.0
+offset_bottom = 486.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 100
+text = "220"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Txt_info" type="Label" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -202.0
+offset_top = -193.0
+offset_right = 199.0
+offset_bottom = -102.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 60
+text = "Parabéns!"
+horizontal_alignment = 1
+
+[node name="Alinhamento" type="HBoxContainer" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -213.0
+offset_top = 47.0
+offset_right = 214.0
+offset_bottom = 197.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Acertou" type="Label" parent="Game_over/Alinhamento"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 60
+text = "Acertou:  "
+
+[node name="Txt_result" type="Label" parent="Game_over/Alinhamento"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 60
+text = " 0/0"
+horizontal_alignment = 1
+
+[node name="Alinhamento2" type="HBoxContainer" parent="Game_over"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = 207.0
+offset_right = 191.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Errou" type="Label" parent="Game_over/Alinhamento2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 60
+text = "Errou:  "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Txt_wrong" type="Label" parent="Game_over/Alinhamento2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 60
+text = " 0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button_menu" type="Button" parent="Game_over"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -169.0
+offset_top = -233.0
+offset_right = 181.0
+offset_bottom = -118.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_hk1u0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_04e7g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2tvg5")
+text = "Menu"
+
+[node name="Txt_timer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 25.0
+offset_right = 487.0
+offset_bottom = 83.0
+theme_override_fonts/font = ExtResource("4_7ojto")
+theme_override_font_sizes/font_size = 50
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="Back_menu_button" to="." method="_on_back_menu_button_pressed"]
+[connection signal="pressed" from="Game_over/Button_menu" to="." method="_on_button_menu_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

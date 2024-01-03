@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://whnhx54kntq1"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_vwyo8"]
+
+[resource]
+script = ExtResource("1_vwyo8")
+question_info = "Qual é o sujeito da frase “O pássaro canta na árvore”?"
+type = 0
+options = Array[String](["Árvore", "Canta", "Na árvore", "O pássaro"])
+correct = "O pássaro"

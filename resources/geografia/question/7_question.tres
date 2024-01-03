@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://dfsnxb73v56tj"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_jpe6l"]
+[ext_resource type="Texture2D" uid="uid://dw2a7w2axvbhi" path="res://assets/reinounidoflag.png" id="1_orfyt"]
+
+[resource]
+script = ExtResource("1_jpe6l")
+question_info = "De qual país essa bandeira pertence?"
+type = 1
+question_image = ExtResource("1_orfyt")
+options = Array[String](["Reino Unido", "Austrália", "Nova Zelândia", "Escócia"])
+correct = "Reino Unido"

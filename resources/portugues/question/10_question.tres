@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dsf16a3yni6wk"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_d35dt"]
+
+[resource]
+script = ExtResource("1_d35dt")
+question_info = "Como são chamadas as palavras com apenas uma sílaba?"
+type = 0
+options = Array[String](["Dissílabas", "Monossílabas", "Trissílabas", "Polissílaba"])
+correct = "Monossílabas"

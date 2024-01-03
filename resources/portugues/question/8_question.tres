@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://b3gt0dsc4peci"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_706ct"]
+
+[resource]
+script = ExtResource("1_706ct")
+question_info = "Qual é o coletivo de “alunos”?"
+type = 0
+options = Array[String](["Classe", "Bando", "Galera", "Multidão"])
+correct = "Classe"

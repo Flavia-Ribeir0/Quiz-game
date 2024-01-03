@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://uchs7wm3my1k"]
+
+[ext_resource type="FontFile" uid="uid://cis0y35gdlpcr" path="res://theboldfont.ttf" id="1_dghcj"]
+
+[resource]
+base_font = ExtResource("1_dghcj")
