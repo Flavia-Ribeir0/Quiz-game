@@ -41,5 +41,5 @@ Um Quiz Game desenvolvido para um trabalho da faculdade.
   
 ### Contatos
 - Linkedin: [Linkedin](https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit)
-- Email: flaviaalexsa12@gmail.com
+- Email: flaviaarbarros12@gmail.com
 
